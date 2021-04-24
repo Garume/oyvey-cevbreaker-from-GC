@@ -10,10 +10,6 @@ buildscript {
             name = 'SpongePowered'
             url = 'https://repo.spongepowered.org/maven'
         }
-        maven {
-            name = 'jitpack.io'
-            url = "https://jitpack.io"
-        }
     }
     dependencies {
         classpath 'net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT'
@@ -47,6 +43,10 @@ repositories {
     maven {
         name = 'spongepowered-repo'
         url = 'https://repo.spongepowered.org/maven/'
+    }
+    maven {
+        name = 'jitpack.io'
+        url = "https://jitpack.io"
     }
     jcenter()
 }
