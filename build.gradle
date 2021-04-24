@@ -10,6 +10,10 @@ buildscript {
             name = 'SpongePowered'
             url = 'https://repo.spongepowered.org/maven'
         }
+        maven {
+            name = 'jitpack.io'
+            url = "https://jitpack.io"
+        }
     }
     dependencies {
         classpath 'net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT'
@@ -55,7 +59,7 @@ dependencies {
         exclude module: 'gson'
         exclude module: 'commons-io'
     }
-    compile "com.github.ZeroMemes:Alpine:1.5"
+    compile 'com.github.ZeroMemes:Alpine:1.5'
     compile 'club.minnced:java-discord-rpc:2.0.2'
     //compile 'com.googlecode.json-simple:json-simple:1.1.1'
 
